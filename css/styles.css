@@ -222,13 +222,16 @@ img {
   align-items: center;
   width: 24px;
   height: 24px;
-  top: 0;
+  top: 24px;
   position: absolute;
-  right: 0;
+  right: 24px;
   background: #e7e9fc;
   border-radius: 50%;
   outline: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mobile-menu-container {
+  position: relative;
 }
 /*========================Menu========================*/
 /* .navigation {
