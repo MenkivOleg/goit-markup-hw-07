@@ -279,10 +279,6 @@ img {
   .contacts-box {
     display: none;
   }
-  .container {
-    max-width: 428px;
-    transition: var(--transition-var);
-  }
   .header {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -451,6 +447,10 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.container-hero {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .hero-title {
