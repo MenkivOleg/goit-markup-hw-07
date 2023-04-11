@@ -1108,10 +1108,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    padding-left: 100px;
   }
   .footer-desc {
     display: block;
+    padding-right: 24px;
   }
   .sub-list {
     text-align: start;
