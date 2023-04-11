@@ -496,9 +496,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list-item:not(:last-child) {
-  margin-bottom: 72px;
-}
 
 .team-desc {
   padding: 32px 0;
@@ -864,7 +861,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--company-logo-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .modal-label-another {
@@ -992,7 +988,6 @@ img {
 
 .form-button-container {
   position: relative;
-  margin-top: 16px;
 }
 
 .form-subscribe {
@@ -1004,7 +999,6 @@ img {
   letter-spacing: 0.04em;
   color: var(--white-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
@@ -1069,6 +1063,12 @@ img {
   .features-list-title {
     text-align: center;
   }
+  .team-list-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .form-button-container {
+    margin-top: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1077,8 +1077,47 @@ img {
     column-gap: 24px;
     row-gap: 72px;
   }
+  .form-elements {
+    gap: 24px;
+  }
   .features-list-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
+  .team-list-item {
+    flex-basis: 264px;
+  }
+  .form-subscribe .mail {
+    width: 264px;
+  }
+  .team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    flex-direction: row;
+  }
+  .customers-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .footer-desc {
+    display: block;
+  }
+  .sub-list {
+    text-align: start;
+  }
+  .social-list-title {
+    text-align: start;
   }
 }
 @media screen and (min-width: 768px) {
