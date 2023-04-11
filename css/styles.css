@@ -1071,7 +1071,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .features-list {
     flex-wrap: wrap;
     column-gap: 24px;
@@ -1120,8 +1120,6 @@ img {
   .social-list-title {
     text-align: start;
   }
-}
-@media screen and (min-width: 768px) {
   .mobile-menu-open {
     display: none;
   }
@@ -1153,5 +1151,17 @@ img {
   }
   .features-list {
     display: flex;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .mobile-menu-open {
+    display: none;
+  }
+  .container {
+    max-width: 1158px;
+  }
+  .menu-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
