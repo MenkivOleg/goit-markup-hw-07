@@ -574,7 +574,6 @@ img {
 }
 
 .portfolio-list-item {
-  flex-basis: calc((100% - 48px) / 3);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -1028,6 +1027,21 @@ img {
   .form-button-container {
     margin-top: 16px;
   }
+  .filter {
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    row-gap: 16px;
+  }
+  .filter-btn {
+    padding: 8px 16px;
+  }
+  .portfolio-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
 }
 
 /* ==========================TABLET=========================== */
@@ -1117,7 +1131,25 @@ img {
     flex-basis: calc((100% - 24px) / 2);
   }
   .portfolio-list {
-    column-gap: 72px;
+    row-gap: 72px;
+  }
+  .features-list-title,
+  .team-list-title,
+  .portfolio-list-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+  }
+  .features-list-text,
+  .team-list-text,
+  .portfolio-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+    max-width: 356px;
   }
 }
 
@@ -1211,6 +1243,10 @@ img {
   .team-list-text,
   .portfolio-list-text {
     font-weight: 400;
+    max-width: 360px;
+  }
+  .portfolio-list {
+    column-gap: 24px;
   }
   .features-list-item {
     flex-basis: calc((100%-72px) / 4);
