@@ -83,11 +83,6 @@ img {
   margin-right: auto;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1158px;
-  }
-}
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
   color: var(--hover-color);
