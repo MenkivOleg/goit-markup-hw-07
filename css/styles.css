@@ -1042,6 +1042,10 @@ img {
     font-size: 20px;
     line-height: calc(24 / 20);
   }
+  .section.portfolio {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 /* ==========================TABLET=========================== */
@@ -1198,6 +1202,10 @@ img {
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+  .section.portfolio {
+    padding-top: 120px;
+    padding-bottom: 100px;
   }
   .features-list {
     display: flex;
