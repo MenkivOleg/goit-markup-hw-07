@@ -92,10 +92,6 @@ img {
 .mobile-menu-link:focus {
   color: var(--hover-color);
 }
-/* .menu-item:not(:last-child),
-.contacts-item:not(:last-child) {
-  margin-right: 40px;
-} */
 
 .button {
   font-weight: 500;
@@ -139,12 +135,6 @@ img {
   text-transform: capitalize;
 }
 
-/* .features-list,
-.work-list,
-.team-list {
-  display: flex;
-  gap: 24px;
-} */
 .work-list,
 .team-list {
   display: flex;
@@ -440,37 +430,6 @@ img {
   .hero-title {
     max-width: 100%;
   }
-}
-/*========================Features========================*/
-
-/* .features-list-item::before {
-  display: block;
-  content: "";
-  height: 112px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-
-  background-color: var(--color-cloud);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
-
-.icon-antenna::before {
-  background-image: url(../images/svg-icons/antenna.svg);
-  background-size: auto;
-}
-.icon-clock::before {
-  background-image: url(../images/svg-icons/clock.svg);
-  background-size: auto;
-}
-.icon-diagram::before {
-  background-image: url(../images/svg-icons/diagram.svg);
-  background-size: auto;
-}
-.icon-astronaut::before {
-  background-image: url(../images/svg-icons/astronaut.svg);
-  background-size: auto;
 }
 /*========================Work========================*/
 
@@ -1045,7 +1004,7 @@ img {
   background-color: transparent;
   outline: none;
 }
-/* ==========================MEDIA SCREEN========================== */
+/* ==========================MOBAL========================== */
 
 @media screen and (max-width: 767px) {
   .menu,
@@ -1070,6 +1029,8 @@ img {
     margin-top: 16px;
   }
 }
+
+/* ==========================TABLET=========================== */
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .features-list {
@@ -1152,7 +1113,15 @@ img {
   .features-list {
     display: flex;
   }
+  .portfolio-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .portfolio-list {
+    column-gap: 72px;
+  }
 }
+
+/* ==========================DESKTOP=========================== */
 @media screen and (min-width: 1158px) {
   .mobile-menu-open {
     display: none;
@@ -1163,5 +1132,131 @@ img {
   .menu-link {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+  .menu {
+    margin-left: 76px;
+  }
+  .contacts {
+    display: flex;
+  }
+  .contacts-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .contacts-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
+  .hero-title {
+    width: 494px;
+    margin-bottom: 48px;
+    font-size: 56px;
+    line-height: calc(60 / 56);
+  }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .features-list {
+    display: flex;
+    gap: 24px;
+  }
+  .features-list-item::before {
+    display: block;
+    content: "";
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+
+    background-color: var(--color-cloud);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .icon-antenna::before {
+    background-image: url(../images/svg-icons/antenna.svg);
+    background-size: auto;
+  }
+  .icon-clock::before {
+    background-image: url(../images/svg-icons/clock.svg);
+    background-size: auto;
+  }
+  .icon-diagram::before {
+    background-image: url(../images/svg-icons/diagram.svg);
+    background-size: auto;
+  }
+  .icon-astronaut::before {
+    background-image: url(../images/svg-icons/astronaut.svg);
+    background-size: auto;
+  }
+  .features-list-title,
+  .team-list-title,
+  .portfolio-list-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+  .features-list-text,
+  .team-list-text,
+  .portfolio-list-text {
+    font-weight: 400;
+  }
+  .features-list-item {
+    flex-basis: calc((100%-72px) / 4);
+  }
+  .section.work {
+    display: flex;
+  }
+  .work-list,
+  .team-list {
+    gap: 24px;
+    flex-direction: row;
+  }
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--title-color);
+  }
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-desc {
+    margin-right: 120px;
+    align-items: flex-start;
+  }
+  .social-links {
+    margin-right: 80px;
+  }
+  .social-list-title,
+  .sub-list {
+    margin-bottom: 16px;
+    text-align: start;
+    font-weight: 500;
+    line-height: calc(24 / 16);
+    color: var(--white-color);
+  }
+  .form-elements {
+    flex-wrap: nowrap;
+  }
+  .form-subscribe .mail {
+    width: 264px;
+  }
+  .form-button-container {
+    margin-left: 24px;
+  }
+  .modal {
+    width: 408px;
   }
 }
